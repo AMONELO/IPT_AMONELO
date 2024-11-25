@@ -1,0 +1,286 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+/* Navbar Style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-img {
+    width: 50px;  /* Set both width and height to the same size */
+    height: 50px; /* Equal height to make it circular */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    border-radius: 50%; /* This makes the image circular */
+}
+
+/* Centered Title */
+.nav-title h1 {
+    color: #00aaff;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    flex-grow: 1;
+    letter-spacing: 1px;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+}
+
+/* Social Media Icons Styling */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Home Button Styling */
+.home-button {
+    background-color: #00aaff;  /* Button color */
+    color: white;  /* Text color */
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #0077cc;  /* Darker shade on hover */
+}
+
+/* Main Content Section (Intro) */
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Profile Image */
+.profile-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* About Me Content */
+.profile-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.profile-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.profile-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Links Between Sections */
+.next-section-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+}
+
+.next-section-link:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Section with Image and Form Content */
+.image-form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.image-form-left {
+    flex: 1;
+}
+
+.image-form-right {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-form h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.image-form p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Latest Projects Section */
+.latest-projects {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.latest-projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Project Gallery */
+.project-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between the images */
+}
+
+.project-item {
+    width: 100%; /* Ensures responsive design */
+    max-width: 300px; /* You can adjust this to control image size */
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Space between rows of images */
+}
+
+.project-item img {
+    width: 100%;
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    object-fit: contain; /* Ensures the entire image fits without cropping */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-item img:hover {
+    transform: scale(1.05); /* Adds hover effect for images */
+}
+
+.project-item h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Back to Profile Link */
+.back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+}
+
+.back-to-top:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
